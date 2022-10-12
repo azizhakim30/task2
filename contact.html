@@ -16,7 +16,7 @@
         </ul>
       </div>
       <div class="nav-right">
-        <a href="#">Contact Me</a>
+        <a href="contact.html">Contact Me</a>
       </div>
     </nav>
 
@@ -28,32 +28,35 @@
       <h1>GET IN TOUCH</h1>
       <div>
         <label for="inputName">Name</label>
-        <input type="text" id="inputName" required />
+        <input type="text" id="inputName" />
       </div>
       <div>
         <label for="inputEmail">Email</label>
-        <input type="email" id="inputEmail" required />
+        <input type="email" id="inputEmail" />
       </div>
       <div>
         <label for="inputPhone">Phone Number</label>
-        <input type="tel" id="inputPhone" required pattern="[0-9]{10-13}" />
+        <input type="number" id="inputPhone" />
       </div>
       <div>
         <label for="inputSubject">Subject</label>
-        <select id="inputSubject" required>
+        <select id="inputSubject">
           <option value="" hidden></option>
-          <option value="frondend">FrondEnd</option>
-          <option value="backend">BackEnd</option>
-          <option value="fullstack">FullStack</option>
+          <option value="FrondEnd">FrondEnd</option>
+          <option value="BackEnd">BackEnd</option>
+          <option value="FullStack">FullStack</option>
         </select>
       </div>
       <div>
         <label for="inputMessage">Your Message</label>
-        <textarea name="inputMessage" id="" cols="30" rows="10"></textarea>
+        <textarea id="inputMessage" cols="30" rows="10"></textarea>
       </div>
-      <button class="submit" type="submit">submit</button>
+      <button class="submit" type="submit" onclick="submitContact()">
+        submit
+      </button>
     </form>
 
     <!-- End Contact Me -->
   </body>
+  <script src="/script.js"></script>
 </html>
